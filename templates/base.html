@@ -1,15 +1,25 @@
+{% load static %}
+{% load bootstrap5 %}
+{% static 'images' as baseUrl  %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
+    <link rel="stylesheet" href="{% static '/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
 </head>
-<body bgcolor="cyan">
+<body >
     
     {% block content %}
 
+    {% include "sidebar.html" %}
+    
+
     {% endblock %}
     
+    <script src="{% static 'js/boostrap.bundle.js' %}"> </script> 
 </body>
 </html>
