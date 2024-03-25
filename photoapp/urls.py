@@ -1,8 +1,10 @@
-from django.urls import path
+from django.urls import path as url
 from . import views
 
+
 urlpatterns = [
-    path('',views.index,name='index'),
-    path('images/',views.images,name='images'),
+    url('',views.index,name='index'),
+    url(r'^images/$', views.images, name = 'images'),
+    url(r'^videos/$', views.videos, name = 'videos'),
 
 ]

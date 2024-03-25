@@ -11,3 +11,7 @@ def index(request):
 def images(request):
 
     return render(request,'images.html')
+
+def videos(request):
+
+    return render(request,'videos.html')

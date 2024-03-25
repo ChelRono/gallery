@@ -15,16 +15,16 @@
                         </a>
                     </li>
                     <li>
-                        <a href="{% url 'index' %}" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                        <a href="{url 'index' }" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
                             <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Gallery</span> </a>
                      
                     </li>
                     <li>
-                        <a href="{%url 'images'%}" class="nav-link px-0 align-middle">
+                        <a href="{url 'images' }" class="nav-link px-0 align-middle">
                             <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Images</span></a>
                     </li>
                     <li>
-                        <a href="{% url 'videos' %}" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                        <a href="{url 'videos' }" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
                             <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">Videos</span></a>
                      
                     </li>
@@ -57,105 +57,44 @@
             </div>
         </div>
         <div class="col py-3">
-            <h3 style="color: blue;">Gallery</h3>
+            <h3 style="color: blue;">Videos</h3>
             <h2>Photo Gallery</h2>
             <p style= "text-align: center;">“The best thing about a picture is that it never changes, even when the people in it do.”</p>
             <div class="second">
-               <br>
+                <div class="col-md-12 text-center">
+                      <form>
+                        <button type="button" class="btn btn-outline-primary ">All</button>
+                        <button type="button" class="btn btn-outline-primary">People</button>
+                        <button type="button" class="btn btn-outline-primary">Animals</button>
+                        <button type="button" class="btn btn-outline-primary">Places</button>
+                       </form>
+                 </div><br>
                  <!-- Gallery -->
-<div class="row">
-  
-    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-      <img
-        src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
-        class="w-100 shadow-1-strong rounded mb-4"
-        alt="Boat on Calm Water"
-      />
-  
-      <img
-        src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
-        class="w-100 shadow-1-strong rounded mb-4"
-        alt="Wintry Mountain Landscape"
-      />
-    </div>
-  
-    <div class="col-lg-4 mb-4 mb-lg-0">
-      <img
-        src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
-        class="w-100 shadow-1-strong rounded mb-4"
-        alt="Mountains in the Clouds"
-      />
-  
-      <img
-        src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
-        class="w-100 shadow-1-strong rounded mb-4"
-        alt="Boat on Calm Water"
-      />
-    </div>
-  
-    <div class="col-lg-4 mb-4 mb-lg-0">
-      <img
-        src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
-        class="w-100 shadow-1-strong rounded mb-4"
-        alt="Waves at Sea"
-      />
-  
-      <img
-        src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
-        class="w-100 shadow-1-strong rounded mb-4"
-        alt="Yosemite National Park"
-      />
-    </div>
-  </div>
-  <!-- Gallery -->
-                  
-                 <!-- Gallery -->
-<div class="row">
-    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-      <img
-        src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
-        class="w-100 shadow-1-strong rounded mb-4"
-        alt="Boat on Calm Water"
-      />
-  
-      <img
-        src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
-        class="w-100 shadow-1-strong rounded mb-4"
-        alt="Wintry Mountain Landscape"
-      />
-    </div>
-  
-    <div class="col-lg-4 mb-4 mb-lg-0">
-      <img
-        src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
-        class="w-100 shadow-1-strong rounded mb-4"
-        alt="Mountains in the Clouds"
-      />
-  
-      <img
-        src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
-        class="w-100 shadow-1-strong rounded mb-4"
-        alt="Boat on Calm Water"
-      />
-    </div>
-  
-    <div class="col-lg-4 mb-4 mb-lg-0">
-      <img
-        src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
-        class="w-100 shadow-1-strong rounded mb-4"
-        alt="Waves at Sea"
-      />
-  
-      <img
-        src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
-        class="w-100 shadow-1-strong rounded mb-4"
-        alt="Yosemite National Park"
-      />
-    </div>
-  </div>
-  <!-- Gallery -->
-    </div>
-</div>
+                 <div class="row">
+                 <div class="container-fluid pb-video-container">
+                    <div class="col-md-10 offset-md-1">
+                        <div class="row pb-row">
+                            <div class="col-md-3 pb-video">
+                                <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/XDp8FhB41vg?si=S0LH3VfBbLFBqCGz" frameborder="0" allowfullscreen></iframe>
+                                <label class="form-control label-warning text-xs-center">Bear Fight</label>
+                            </div>
+                            <div class="col-md-3 pb-video">
+                                <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/XDp8FhB41vg?si=S0LH3VfBbLFBqCGz" frameborder="0" allowfullscreen></iframe>
+                                <label class="form-control label-warning text-xs-center">Bear Fight</label>
+                            </div>
+                            <div class="col-md-3 pb-video">
+                                <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/XDp8FhB41vg?si=S0LH3VfBbLFBqCGz" frameborder="0" allowfullscreen></iframe>
+                                <label class="form-control label-warning text-xs-center">Bear Fight</label>
+                            </div>
+                            <div class="col-md-3 pb-video">
+                                <iframe class="pb-video-frame" width="100%" height="230" src="https://www.youtube.com/embed/XDp8FhB41vg?si=S0LH3VfBbLFBqCGz" frameborder="0" allowfullscreen></iframe>
+                                <label class="form-control label-warning text-xs-center">Bear Fight</label>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                
 
 
 {% endblock %}
