@@ -9,7 +9,7 @@
             <div class="card-body p-5">
               <h2 class="text-uppercase text-center mb-5">Login</h2>
 
-              <form action="register" method="post">
+              <form action="login" method="post">
                 {% csrf_token %}
 
                   <div class="form-outline mb-4">
@@ -26,11 +26,15 @@
                     <input type="Submit">
                 </div>
 
-                <p class="text-center text-muted mt-5 mb-0">Have already an account? <a href="#!"
-                    class="fw-bold text-body"><u>Login here</u></a></p>
+                <p class="text-center text-muted mt-5 mb-0">Don't have an account? <a href="#!"
+                    class="fw-bold text-body"><u>Register here</u></a></p>
 
               </form>
-
+              <div>
+                {% for message in messages %}
+                <h3>{{message}}</h3>
+                {% endfor %}
+            </div>
             </div>
           </div>
         </div>
