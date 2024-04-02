@@ -3,7 +3,6 @@ from . import views
 
 
 urlpatterns = [
-    url('',views.index,name='index'),
     url(r'^authentication/$', views.register, name = 'register'),
  
 
