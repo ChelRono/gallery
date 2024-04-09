@@ -10,7 +10,9 @@ def index(request):
 
 def images(request):
 
-    return render(request,'images.html')
+    galls = Gallery.objects.all()
+
+    return render(request,'images.html',{'galls' : galls})
 
 def videos(request):
 
